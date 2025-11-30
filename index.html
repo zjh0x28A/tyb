@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -189,18 +190,16 @@
         
         li {
              margin-bottom: 10px;
-             position: relative;
-             padding-left: 20px; /* 为图标留空间 */
+             display: flex;
+             align-items: center; /* 垂直居中对齐 */
         }
         
         /* 图标化：使用Emoji作为列表项图标 */
         .card ul li::before {
             content: '✅';
-            position: absolute;
-            left: 0;
             color: var(--accent-color);
             font-size: 1.1rem;
-            top: 2px;
+            margin-right: 10px; /* 调整图标与文字间距 */
         }
         
         .card.reward ul li::before {
