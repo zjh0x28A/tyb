@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -435,7 +434,7 @@
         @media (max-width: 768px) {
             .hero-header {
                 padding: 50px 20px;
-                text-align: left; /* 手机端左对齐更易读 */
+                text-align: center; /* 根据要求调整为居中 */
             }
 
             .main-title {
@@ -443,7 +442,12 @@
             }
             
             .main-title::after {
-                margin: 15px 0 0; /* 左对齐下划线 */
+                margin: 15px auto 0; /* 恢复居中 */
+            }
+
+            .intro-text {
+                text-align: left; /* 保持段落左对齐 */
+                margin-top: 25px; /* 增加与标题的间距 */
             }
 
             .section-title {
